@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comfortaa", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(95, 60, 15);
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    padding: 30px 40px;
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px;
+    resize: none;
+}
+
+.form-group input::placeholder, .form-group textarea::placeholder {
+    color: #fff;
+}
+
+.btn-primary, .btn-secondary {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.btn-danger, .btn-edit {
+    width: 48%; 
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin: 10px 1%; 
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-danger i, .btn-edit i {
+    margin-right: 8px;
+}
+
+.btn-danger {
+    background: #e74c3c;
+    width: 80px;
+    height: auto;
+    color: #fff;
+    margin-top: auto;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.btn-edit {
+    background: #3498db;
+    height: auto;
+    width: 80px;
+    margin-top: auto;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.btn-danger:hover, .btn-edit:hover {
+    background: rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+}
+
+.list-group-item {
+    background: transparent;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.list-group-item h5 {
+    margin-bottom: 5px;
+}
+
+.list-group-item small {
+    display: block;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.navbar {
+    background-color: rgba(173, 206, 238, 0.8);
+    border-top: 5px solid #007bff;
+    border-bottom: 5px solid #007bff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-link:hover {
+    color: #ddd;
+}
+
+.navbar .navbar-brand {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.navbar .navbar-brand:hover {
+    color: #0056b3;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .back-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .back-video {
+        width: auto;
+        height: 100%;
+    }
+}
